@@ -1,0 +1,32 @@
+#using yml
+emp:
+  info:
+    #simple properties
+    id: 1002
+    name: Manoj
+    #Array
+    nick-names:
+    - MJ
+    - Kumar
+    - Moogly
+    #Set
+    phone-numbers:
+    - 9898989878
+    - 9876565454
+    - 8765432343
+    - 8888888888
+    #List
+    team-members:
+    - MJ3
+    - Kumar3
+    - Moogly3
+    #Map
+    id-details:
+      adhar: 6575655555
+      pan: AFDGD6454433
+      voterId: 756565656
+      #HAS-A
+    comp-details:
+      title: Softition Solutions
+      location: Soro
+      size: 10000000
