@@ -1,0 +1,44 @@
+spring:
+  profiles:
+    active: uat
+---
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: ''
+    type: org.apache.commons.dbcp2.BasicDataSource
+    url: jdbc:mysql:///spring_boot_tutorial
+    username: root
+    
+---
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: ''
+    type: oracle.ucp.jdbc.PoolDataSourceImpl
+    url: jdbc:mysql:///spring_boot_tutorial
+    username: root
+    
+---
+
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: tiger
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: system
+    
+---
+
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    hikari:
+      idle-timeout: 20
+      maximum-pool-size: 100
+      minimum-idle: 10
+    password: tiger
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: system
